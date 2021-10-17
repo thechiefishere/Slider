@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import data from "./data";
+import Review from "./components/Review";
+import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 
 function App() {
+  const [people, setPeople] = useState(data);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <h1>
+        <span>/</span>Reviews
+      </h1>
+      <FiChevronLeft />
+      <FiChevronRight />
+      <section>
+        {people.map((person) => {
+          return <Review key={person.id} person={person} />;
+        })}
+      </section>
+    </main>
   );
 }
 
