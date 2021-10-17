@@ -1,0 +1,96 @@
+$primary-color: rgb(214, 226, 230);
+$secondary-color: rgb(6, 73, 94);
+$tertiary-color: rgba(97, 35, 35, 0.664);
+
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 10px;
+}
+main {
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 100px;
+  .heading {
+    text-align: center;
+    color: $secondary-color;
+    span {
+      margin-right: 15px;
+      font-size: 2.2rem;
+      color: $tertiary-color;
+      //   font-weight: 800;
+    }
+  }
+  .slide {
+    background-color: $secondary-color;
+    position: absolute;
+    height: 4vh;
+    width: 25px;
+    color: #fff;
+    top: 30vh;
+  }
+  .slide1 {
+    left: 20px;
+  }
+  .slide2 {
+    right: 20px;
+  }
+  .section {
+    article {
+      text-align: center;
+      margin-top: 50px;
+      .img {
+        width: 35%;
+        height: 20vh;
+        margin: 0 auto;
+        display: block;
+        border-radius: 50%;
+        border: 1px solid $secondary-color;
+      }
+      .name {
+        color: $tertiary-color;
+        margin-bottom: 5px;
+      }
+      .title {
+        color: $secondary-color;
+        margin-top: 5px;
+        margin-bottom: 15px;
+      }
+      .quote {
+        padding: 10px 25px;
+      }
+      .icon {
+        font-size: 2rem;
+        margin-top: 30px;
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+@media (min-width: 620px) {
+  main {
+    width: 70%;
+  }
+}
+
+@media (min-width: 820px) {
+  main {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1120px) {
+  main {
+    width: 35%;
+  }
+}

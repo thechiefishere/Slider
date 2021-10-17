@@ -21,19 +21,24 @@ function App() {
     } else if (indexToShow >= people.length) {
       setIndexToShow(0);
     }
-    console.log("index is " + indexToShow);
   };
 
   return (
     <main>
-      <h1>
+      <h1 className="heading">
         <span>/</span>Reviews
       </h1>
       {show()}
 
-      <FiChevronLeft onClick={() => btnClicked("left")} />
-      <FiChevronRight onClick={() => btnClicked("right")} />
-      <section>
+      <FiChevronLeft
+        className="slide slide1"
+        onClick={() => btnClicked("left")}
+      />
+      <FiChevronRight
+        className=" slide slide2"
+        onClick={() => btnClicked("right")}
+      />
+      <section className="section">
         <Review person={people[indexToShow]} />
       </section>
     </main>

@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 10px;
 }
+
+main {
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+main .heading {
+  text-align: center;
+  color: #06495e;
+}
+main .heading span {
+  margin-right: 15px;
+  font-size: 2.2rem;
+  color: rgba(97, 35, 35, 0.664);
+}
+main .slide {
+  background-color: #06495e;
+  position: absolute;
+  height: 4vh;
+  width: 25px;
+  color: #fff;
+  top: 30vh;
+}
+main .slide1 {
+  left: 20px;
+}
+main .slide2 {
+  right: 20px;
+}
+main .section article {
+  text-align: center;
+  margin-top: 50px;
+}
+main .section article .img {
+  width: 35%;
+  height: 20vh;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid #06495e;
+}
+main .section article .name {
+  color: rgba(97, 35, 35, 0.664);
+  margin-bottom: 5px;
+}
+main .section article .title {
+  color: #06495e;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+main .section article .quote {
+  padding: 10px 25px;
+}
+main .section article .icon {
+  font-size: 2rem;
+  margin-top: 30px;
+  color: #06495e;
+}
+
+@media (min-width: 620px) {
+  main {
+    width: 70%;
+  }
+}
+@media (min-width: 820px) {
+  main {
+    width: 50%;
+  }
+}
+@media (min-width: 1120px) {
+  main {
+    width: 35%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
